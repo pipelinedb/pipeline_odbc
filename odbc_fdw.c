@@ -322,7 +322,6 @@ odbcGetOptions(Oid foreigntableid, char **svr_dsn, char **svr_database, char **s
       if (list_length(namelist) == 1)
       {
       	*svr_schema = "public";
-      	elog(WARNING, "no schema given for relation \"%s\", assuming schema is \"public\"", rel);
       	*svr_table = linitial(namelist);
       }
       else if (list_length(namelist) == 2)
