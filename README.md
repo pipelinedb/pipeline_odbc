@@ -56,7 +56,7 @@ Now connect to PipelineDB with `pipeline`. First we'll need to create the `odbc_
     pipeline=# CREATE EXTENSION odbc_fdw;
     CREATE EXTENSION
     
-Next, point PipelineDB to the Vertica cluster via `odbc_fdw` FDW (note that this uses the DSN from `/etc/odbc.ini`):
+Next, point PipelineDB to the Vertica cluster via `odbc_fdw` (note that this uses the DSN from `/etc/odbc.ini`):
     
     pipeline=# CREATE SERVER vertica FOREIGN DATA WRAPPER odbc_fdw OPTIONS (dsn 'Vertica');
     CREATE SERVER
