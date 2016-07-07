@@ -4,7 +4,7 @@ PipelineDB ODBC extension, mainly for PipelineDB `<->` Vertica integration
 
 # Building
 
-You'll need to be able to build PipelineDB extensions, so you'll need to have PipelineDB installed on your system. Building the `odbc_fdw` extension utlimately uses `pg_config`, so PipelineDB's binary directory is on your path. Next, build and install the extension:
+You'll need to be able to build PipelineDB extensions, so you'll need to have PipelineDB installed on your system. Building the `odbc_fdw` extension utlimately uses `pg_config`, so ensure that PipelineDB's binary directory is on your path. Next, build and install the extension:
 
     make
     make install
