@@ -98,6 +98,4 @@ And verify that the continuous view in PipelineDB properly joined the Vertica re
      0 | 1000
     (1 row)
 
-
-
-    
+:boom:
