@@ -11,7 +11,7 @@ You'll need to be able to build PipelineDB extensions, so you'll need to have Pi
 
 # Quickstart
 
-First created a DSN for connecting to Vertica from `odbc_fdw`. For example:
+First, create a DSN for connecting to Vertica from `odbc_fdw`. For example:
 
 ```
 cat <<- EOF > /etc/odbcinst.ini
