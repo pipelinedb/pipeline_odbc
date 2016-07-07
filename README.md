@@ -72,7 +72,7 @@ The final thing we need to do is map the PipelineDB user to a Vertica user:
     pipeline=# CREATE USER MAPPING FOR <pipelinedb user> SERVER vertica \
     OPTIONS (username '<vertica user>', password '<vertica password>');
     
-We can now interact with Vertica via PipelineDB as if the Vertica table were a native PipelineDB relation:
+We can now interact with our Vertica table via PipelineDB as if it were a native PipelineDB relation:
 
     pipeline=# SELECT * FROM vertica_test;
      x | y | z 
