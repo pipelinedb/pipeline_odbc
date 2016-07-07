@@ -83,7 +83,7 @@ We can now interact with our Vertica table via PipelineDB as if it were a native
 This means that the Vertica table can be used in a stream-table join with a continuous view:
 
     pipeline=# CREATE CONTINUOUS VIEW v0 AS SELECT x::integer, COUNT(*) \
-    stream s JOIN vertica_test t ON s.x = t.x GROUP BY s.z;
+    FROM stream s JOIN vertica_test t ON s.x = t.x GROUP BY s.x;
     
 Insert some rows that will join on the row we previously inserted into Vertica:
 
