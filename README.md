@@ -85,7 +85,7 @@ This means that the Vertica table can be used in a stream-table join with a cont
     pipeline=# CREATE CONTINUOUS VIEW v0 AS SELECT x::integer, COUNT(*) \
     FROM stream s JOIN vertica_test t ON s.x = t.x GROUP BY s.x;
     
-Insert some rows that will join on the row we previously inserted into Vertica:
+Insert some rows into the stream that will join on the row we previously inserted into Vertica:
 
     pipeline=# INSERT INTO stream (x) SELECT 0 AS x FROM generate_series(1, 1000);
     INSERT 1000
